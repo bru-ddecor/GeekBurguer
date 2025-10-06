@@ -14,7 +14,8 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: sticky;
+    position: relative;
+  z-index: 9999;
     top: 0;
 }
 
@@ -44,8 +45,8 @@ section {
 }
 
 .home-content {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.367);
+    color: white;
     padding: 20px 30px;
     border-radius: 10px;
     display: inline-block;
@@ -55,6 +56,17 @@ section {
 
 #sobre {
     background: #fff;
+}
+
+.sobre-content {
+  background-color:rgba(97, 58, 236, 0.19);
+    color:black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 0 25%;
 }
 
 #cardapio {
@@ -98,6 +110,8 @@ section {
     /* mantém botão sempre no fim */
     padding: 20px 10px 15px 10px;
     scroll-snap-align: start;
+    transform: scale(1.05);
+  z-index: 0; /* garante que ele não suba sobre o menu */
 }
 
 .card-img-container {
@@ -246,85 +260,66 @@ section {
 
   /*cardapio2*/
 
-  #cardapio2 {
-    position: relative;
-    z-index: 1; /* garante que fique no fluxo normal */
-    padding: 60px 0;
-    background-color: #fafafa;
-
-  }
-
-  .cardapio2 h3 {
-    margin-top: 20px;
-    text-align: left;
+  #sorvetes {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff7f0; /* uma cor de fundo leve pra diferenciar da seção de hambúrgueres */
   }
   
-  .menu-container {
-    width: 90%;
-    max-width: 1000px; /* deixa o tamanho controlado */
-    margin: 0 auto;
+  #sorvetes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
   
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  #sorvetes p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
   
-  .menu-item {
+  .card {
     background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s;
   }
   
-  .menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-  }
-  
-  .menu-item img {
+  .card img {
     width: 100%;
-    height: 140px; /* ↓ menor, igual ao modelo do Figma */
-    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
   
-  .menu-info {
-    padding: 12px;
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
   
-  .menu-info h3 {
-    font-size: 1rem;
-    margin-bottom: 4px;
-  }
-  
-  .menu-info p {
-    font-size: 0.85rem;
-    color: #555;
-    height: 48px;
-    overflow: hidden;
-  }
-  
-  .menu-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8px;
-  }
-  
-  .price {
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  .btn {
-    background: #000;
-    color: #fff;
+  .card button {
+    background-color: #ff6b6b;
     border: none;
-    border-radius: 6px;
-    padding: 6px 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #ff3b3b;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
   }
 
 footer {
