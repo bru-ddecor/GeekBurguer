@@ -35,15 +35,15 @@ section {
 }
 
 #home {
-    background-image: url(ChatGPT\ Image\ 5\ de\ out.\ de\ 2025\,\ 18_49_14.png);
+    background-image: url(papel-de-parede-adesivo-geek-em-quadrinhos.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    color: #f4f4f4;
+    background-repeat: repeat-x;
+    color: black;
 
 }
 
-/*.home-content {
+.home-content {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     padding: 20px 30px;
@@ -51,7 +51,7 @@ section {
     display: inline-block;
     text-align: center;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}*/
+}
 
 #sobre {
     background: #fff;
@@ -158,8 +158,7 @@ section {
 }
 
 #quadros {
-    background-image: url(papel-de-parede-adesivo-geek-em-quadrinhos.jpg);
-    background-repeat: repeat-x;
+    background-color: #c71a1ad6;
 }
 
 /* Estilo geral da seção de cardápio */
