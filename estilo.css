@@ -1,22 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 body {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 header {
-    background: #c71a1a;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+  background: #c71a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
   z-index: 9999;
-    top: 0;
+  top: 0;
 }
 
 
@@ -24,307 +24,820 @@ header {
 
 
 nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 section {
-    padding: 60px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 #home {
-    background-image: url(papel-de-parede-adesivo-geek-em-quadrinhos.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat-x;
-    color: black;
+  background-image: url(papel-de-parede-adesivo-geek-em-quadrinhos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-x;
+  color: black;
 
 }
 
 .home-content {
-    background-color: rgba(0, 0, 0, 0.367);
-    color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    display: inline-block;
-    text-align: center;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.367);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 #sobre {
-    background: #fff;
+  background: #fff;
 }
 
 .sobre-content {
-  background-color:rgba(97, 58, 236, 0.19);
-    color:black;
-    padding: 20px 30px;
-    border-radius: 10px;
-    display: inline-block;
-    text-align: center;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    margin: 0 25%;
+ /* background-color: rgba(97, 58, 236, 0.19);*/
+  color: black;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  /*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);*/
+  margin: 0 22%;
 }
 
 #cardapio {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 #pedido {
-    background: #fff;
+  background: #fff;
 }
 
 #geekspace {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 .frame-6 {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    gap: 34px;
-    overflow-x: auto;
-    box-sizing: border-box;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    cursor: grab;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 34px;
+  overflow-x: auto;
+  box-sizing: border-box;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
 }
 
 .frame-6:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 .card {
-    flex-shrink: 0;
-    width: 278px;
-    background: #fff;
-    border-radius: 45px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* mantém botão sempre no fim */
-    padding: 20px 10px 15px 10px;
-    scroll-snap-align: start;
-    transform: scale(1.05);
-  z-index: 0; /* garante que ele não suba sobre o menu */
+  flex-shrink: 0;
+  width: 278px;
+  background: #fff;
+  border-radius: 45px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* mantém botão sempre no fim */
+  padding: 20px 10px 15px 10px;
+  scroll-snap-align: start;
+  transform: scale(1.05);
+  z-index: 0;
+  /* garante que ele não suba sobre o menu */
 }
 
 .card-img-container {
-    width: 100%;
-    height: 295px;
-    /* tamanho fixo */
-    overflow: hidden;
-    border-radius: 45px 45px 25px 25px;
-    margin-bottom: 15px;
-    /* espaço do “frame polaroid” */
+  width: 100%;
+  height: 295px;
+  /* tamanho fixo */
+  overflow: hidden;
+  border-radius: 45px 45px 25px 25px;
+  margin-bottom: 15px;
+  /* espaço do “frame polaroid” */
 }
 
 .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* mantém proporção e preenche o frame */
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* mantém proporção e preenche o frame */
+  display: block;
 }
 
 .card h3 {
-    font-weight: 800;
-    font-size: 20px;
-    margin: 0 0 10px 0;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0 0 10px 0;
 }
 
 .card button {
-    align-self: center;
-    /* centraliza botão */
-    width: 134px;
-    height: 29px;
-    background-color: #C71A1A;
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    /* texto um pouco menor */
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
+  align-self: center;
+  /* centraliza botão */
+  width: 134px;
+  height: 29px;
+  background-color: #C71A1A;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  /* texto um pouco menor */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
-    .frame-6 {
-        gap: 15px;
-        /* menos espaço entre os cards */
-        padding: 10px;
-    }
+  .frame-6 {
+    gap: 15px;
+    /* menos espaço entre os cards */
+    padding: 10px;
+  }
 
-    .card button {
-        width: 120px;
-        /* botão menor em telas pequenas */
-        font-size: 13px;
-    }
+  .card button {
+    width: 120px;
+    /* botão menor em telas pequenas */
+    font-size: 13px;
+  }
 
-    .card h3 {
-        font-size: 18px;
-    }
+  .card h3 {
+    font-size: 18px;
+  }
 }
 
 #quadros {
-    background-color: #c71a1ad6;
+  background-color: #c71a1ad6;
+  color: #000000;
+  /*text-shadow: 1px 1px 3px rgba(255, 250, 250, 0.422);*/
 }
+
+#quadros h2 {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.84);
+}
+
+/*área geekspace*/
+
+#geekspace {
+  background: linear-gradient(white,rgb(66, 66, 100), rgb(239, 36, 36), white);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#geekspace h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Carrossel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 15px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(199,26,26,0.8);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Políticas e pacotes */
+.policies {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(97, 58, 236, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.policies ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Formulário de reserva */
+.reservation {
+  margin-top: 50px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reservation input,
+.reservation select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.reservation button {
+  background-color: #C71A1A;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.reservation button:hover {
+  background-color: #a01616;
+}
+
+/* Placar */
+.leaderboard {
+  margin-top: 50px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(97, 58, 236, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.leaderboard ol li {
+  margin-top: 50px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(97, 58, 236, 0.1);
+  padding: 10px;
+  gap: 5px;
+  border-radius: 15px;
+  align-items: left;
+}
+
+
 
 /* Estilo geral da seção de cardápio */
 
-#cardapio {
-    position: relative;
-    z-index: 1; /* garante que fique no fluxo normal */
-    padding: 60px 0;
-    background-color: #fafafa;
+#hamburgueres {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(97, 58, 236, 0.19);
+}
 
-  }
+#hamburgueres h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-  .cardapio h3 {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .menu-container {
-    width: 90%;
-    max-width: 1000px; /* deixa o tamanho controlado */
-    margin: 0 auto;
-  }
-  
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .menu-item {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .menu-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-  }
-  
-  .menu-item img {
-    width: 100%;
-    height: 140px; /* ↓ menor, igual ao modelo do Figma */
-    object-fit: cover;
-  }
-  
-  .menu-info {
-    padding: 12px;
-  }
-  
-  .menu-info h3 {
-    font-size: 1rem;
-    margin-bottom: 4px;
-  }
-  
-  .menu-info p {
-    font-size: 0.85rem;
-    color: #555;
-    height: 48px;
-    overflow: hidden;
-  }
-  
-  .menu-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8px;
-  }
-  
-  .price {
-    font-weight: 600;
-    font-size: 1rem;
-  }
-  
-  .btn {
-    background: #000;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 6px 10px;
-    cursor: pointer;
-  }
+#hamburgueres p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
 
-  /*cardapio2*/
+#hamburgueres .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-  #sorvetes {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff7f0; /* uma cor de fundo leve pra diferenciar da seção de hambúrgueres */
-  }
-  
-  #sorvetes h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  #sorvetes p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #555;
-  }
-  
-  .cards-container {
+#hamburgueres .card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+#hamburgueres .card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#hamburgueres .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#hamburgueres .card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+#hamburgueres .card button {
+  background-color: #ff6b6b;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#hamburgueres .card button:hover {
+  background-color: #ff3b3b;
+}
+
+#hamburgueres .card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 200px;
+  /* define a altura fixa do frame */
+  overflow: hidden;
+  /* esconde o que passar da moldura */
+  border-radius: 10px;
+  /* deixa com cantos arredondados */
+  margin-bottom: 15px;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* preenche o espaço sem distorcer */
+  display: block;
+}
+
+/*porções e combos*/
+#porcoes {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff7f0;
+  /* uma cor de fundo leve pra diferenciar da seção de hambúrgueres */
+}
+
+#porcoes h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#porcoes p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 200px;
+  /* define a altura fixa do frame */
+  overflow: hidden;
+  /* esconde o que passar da moldura */
+  border-radius: 10px;
+  /* deixa com cantos arredondados */
+  margin-bottom: 15px;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* preenche o espaço sem distorcer */
+  display: block;
+}
+
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #ff6b6b;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #ff3b3b;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+/*sorvetes*/
+
+#sorvetes {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff7f0;
+  /* uma cor de fundo leve pra diferenciar da seção de hambúrgueres */
+}
+
+#sorvetes h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#sorvetes p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 200px;
+  /* define a altura fixa do frame */
+  overflow: hidden;
+  /* esconde o que passar da moldura */
+  border-radius: 10px;
+  /* deixa com cantos arredondados */
+  margin-bottom: 15px;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* preenche o espaço sem distorcer */
+  display: block;
+}
+
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #ff6b6b;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #ff3b3b;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/*footer area*/
+
+/*footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}*/
+
+.footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 250px;
-    padding: 20px;
-    transition: transform 0.3s;
-  }
-  
-  .card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .card button {
-    background-color: #ff6b6b;
-    border: none;
-    padding: 10px 20px;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #222;
     color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .card button:hover {
-    background-color: #ff3b3b;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
+    gap: 20px;
+}
+
+.footer-section {
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #ff6b6b; /* cor de destaque geek */
+}
+
+.footer-section a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: #ff6b6b;
+}
+
+footer p {
+  background: #222;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Ícones das redes sociais */
+.footer-section i {
+    margin-right: 8px;
+}
+
+/* ===================== */
+/* MEDIA QUERIES CELULAR */
+/* ===================== */
+@media (max-width: 480px) {
+
+  /* Header e Nav */
+  header {
+    padding: 15px 10px;
   }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
+  header img.logo {
+    width: 250px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    flex-wrap: wrap; /* permite quebrar a linha se precisar */
+    gap: 10px; /* espaço entre os links */
+}
+
+  nav a {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  /* Home */
+  .home-content {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+  /* Sobre Nós */
+  .sobre-content {
+    margin: 0 5%;
     padding: 15px;
+    font-size: 14px;
+  }
+
+  /* Frame-6 (Cards do Geek Space) */
+  .frame-6 {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 15px;
+    transform: scale(1);
+  }
+
+  .card h3 {
+    font-size: 16px;
+    color: black;
+  }
+
+  .card button {
+    width: 110px;
+    font-size: 12px;
+    padding: 8px 15px;
+    align-items: baseline;
+  }
+
+  .card-img-container {
+    height: 180px;
+  }
+
+
+
+  /* GeekSpace */
+  #geekspace h2 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif; font-weight: 800;
+    font-size: 5em;
+    color: transparent;
+    -webkit-text-stroke-width: 2px; /* Largura do contorno */
+  -webkit-text-stroke-color: black; /* Cor do contorno */
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .carousel-btn {
+    padding: 8px;
+  }
+
+  /* Políticas e Pacotes */
+  .policies {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  /* Formulário de reserva */
+  .reservation {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .reservation input,
+  .reservation select,
+  .reservation button {
+    font-size: 14px;
+  }
+
+  /* Placar */
+  .leaderboard {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .leaderboard ol li {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Seção Hamburgueres, Porções e Sorvetes */
+  #hamburgueres h2,
+  #porcoes h2,
+  #sorvetes h2 {
+    font-size: 1.8rem;
+  }
+
+  #hamburgueres p,
+  #porcoes p,
+  #sorvetes p {
+    font-size: 1rem;
+  }
+
+  #hamburgueres .cards-container,
+  #porcoes .cards-container,
+  #sorvetes .cards-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #hamburgueres .card,
+  #porcoes .card,
+  #sorvetes .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #hamburgueres .card img,
+  #porcoes .card img,
+  #sorvetes .card img {
+    height: 160px;
+  }
+
+  #hamburgueres .card h3,
+  #porcoes .card h3,
+  #sorvetes .card h3 {
+    font-size: 16px;
+  }
+
+  #hamburgueres .card p,
+  #porcoes .card p,
+  #sorvetes .card p {
+    font-size: 13px;
+  }
+
+  #hamburgueres .card button,
+  #porcoes .card button,
+  #sorvetes .card button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    min-width: auto;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section a {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
